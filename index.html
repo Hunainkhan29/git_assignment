@@ -1,43 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <p>welcome to commit 1</p>
-    <p>welcome to commit 2</p>
-    <p>welcome to commit 5</p>
-
-
-<<<<<<< HEAD
-changes made by hunain branch
-
-
+  <title>To-Do Page</title>
 </head>
-<body>   
-    <script>
-        const express = require("express");
-        const app = express();
-        const port = 3000;
+<body>
+  <h1>My To-Do List</h1>
 
-//Reading JSON file
-const data = require("./data.json");
+  <form>
+    <label for="itemName">Item Name</label><br>
+    <input type="text" id="itemName" name="itemName" required><br><br>
 
-// API route
-app.get("/api", (req, res) => {
-  res.json(data);
-});
+    <label for="itemDesc">Item Description</label><br>
+    <textarea id="itemDesc" name="itemDesc" required></textarea><br><br>
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+    <button type="submit">Add To-Do</button>
+  </form>
 
 </body>
 </html>
-=======
-this is my branch 
-
-</html>
-
->>>>>>> hunainkhan29
-
