@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,30 @@
     <p>welcome to commit 1</p>
     <p>welcome to commit 2</p>
     <p>welcome to commit 5</p>
-:
+
 
 changes made by hunain branch
 
+
+</head>
+<body>   
+    <script>
+        const express = require("express");
+        const app = express();
+        const port = 3000;
+
+//Reading JSON file
+const data = require("./data.json");
+
+// API route
+app.get("/api", (req, res) => {
+  res.json(data);
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+
+</body>
 </html>
 
